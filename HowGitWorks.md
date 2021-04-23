@@ -339,7 +339,7 @@ local de conflict ler çözümlenip local de merge işlermi tamamlandıktan sonr
 
 bu nedenle local de yapılan rebase leri remote a göndermemek gerekir. çünkü bu tarz bir merge işlemi conflict lere sebep olacaktır.
 
-aşağıda görüleceği üzere 
+aşağıda görüleceği üzere rebase 
 
 ![rebase3.png](files/rebase3.png)
 
