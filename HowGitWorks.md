@@ -107,7 +107,7 @@ doylarımızı commitletiyp _git log_ komutu ile bakacak olursak
 ```
 git log
 commit f56470d56df19e45bade938ff2d3a97276c35be6 (HEAD -> master)
-Author: Murat Çabuk <murat.cabuk@kizilay.org.tr>
+Author: Murat Çabuk <muratcabuk@mail.com>
 Date:   Thu Apr 22 21:33:02 2021 +0300
 
     first commit
@@ -122,8 +122,8 @@ fakat komutu yazdığımızda alttaki gibi bir sonuçla karşılaşıyoruz.
 git cat-file f56470d56df19e45bade938ff2d3a97276c35be6 -p
 
 tree c7dcd38517a7e45cedf1da70e4edd47a2bcc748b
-author Murat Çabuk <murat.cabuk@kizilay.org.tr> 1619116382 +0300
-committer Murat Çabuk <murat.cabuk@kizilay.org.tr> 1619116382 +0300
+author Murat Çabuk <muratcabuk@mail.com> 1619116382 +0300
+committer Murat Çabuk <muratcabuk@mail.com> 1619116382 +0300
 
 first commit
 
@@ -151,13 +151,13 @@ burayı anlamak için öncelikle liste.txt dosyamızın içeriğini değiştiriy
 ```
 git log
 commit 562e2899f2b66c9b8c5a4eae3328de73e975be93 (HEAD -> master)
-Author: Murat Çabuk <murat.cabuk@kizilay.org.tr>
+Author: Murat Çabuk <muratcabuk@mail.com>
 Date:   Thu Apr 22 22:01:18 2021 +0300
 
     second comit
 
 commit f56470d56df19e45bade938ff2d3a97276c35be6
-Author: Murat Çabuk <murat.cabuk@kizilay.org.tr>
+Author: Murat Çabuk <muratcabuk@mail.com>
 Date:   Thu Apr 22 21:33:02 2021 +0300
 
     first commit
@@ -170,8 +170,8 @@ Date:   Thu Apr 22 21:33:02 2021 +0300
 git cat-file 562e2899f2b66c9b8c5a4eae3328de73e975be93 -p
 tree 150fe9fe5a342b53147a54aba2dd38afddd77246
 parent f56470d56df19e45bade938ff2d3a97276c35be6
-author Murat Çabuk <murat.cabuk@kizilay.org.tr> 1619118078 +0300
-committer Murat Çabuk <murat.cabuk@kizilay.org.tr> 1619118078 +0300
+author Murat Çabuk <muratcabuk@mail.com> 1619118078 +0300
+committer Murat Çabuk <muratcabuk@mail.com> 1619118078 +0300
 
 second commit
 
@@ -339,13 +339,9 @@ local de conflict ler çözümlenip local de merge işlermi tamamlandıktan sonr
 
 bu nedenle local de yapılan rebase leri remote a göndermemek gerekir. çünkü bu tarz bir merge işlemi conflict lere sebep olacaktır.
 
-aşağıda görüleceği üzere rebase 
+aşağıda görüleceği üzere rebase bütün adımları commit olrak ekler. budurumdan habersiz ola diğer developer lar push işlemi yaptıklarında conflict ile karşılaşmaları yüksek ihtimal olacaktır. bu durumda burada yapılanları anlamak ve conflictleri çözmek durumunda kalacaklardır.
 
 ![rebase3.png](files/rebase3.png)
-
-
-
-
 
 **resources**
 
