@@ -539,7 +539,8 @@ git push origin -f # Example
 # 3. opsiyon
 git push -f
 
-# 4. ve en güvenilir opsion. remote branch üzerinde biz rebase işlemini tamamlamadn öcne başkları bir şeyler yaptısa onların commitlerini bozmamızı engeller.
+# 4. ve en güvenilir opsion. remote branch üzerinde biz rebase işlemini tamamlamadan önce diğer developerlar bir şeyler yaptıysa onların commitlerini bozmamızı engeller.
+
 git push <remote> <branch> --force-with-lease
 
 ```
@@ -554,12 +555,9 @@ If you’re working on a team and need to rebase a shared branch, here are the s
 - Rebase, then git push origin yourbranch -f
 - Have your team fix up their local branches with git checkout  yourbranch, git fetch and git reset --hard origin/ yourbranch
 
-diğer bir yol remote dan branchi tamamen silip  yeni branch oluşturuop localı pushlamak.    
-
-
+diğer bir yol remote dan branchi tamamen silip  yeni branch oluşturuop local ı pushlamak.    
 
 - https://willi.am/blog/2014/08/12/the-dark-side-of-the-force-push/
-- 
 
 
 # Clean History
