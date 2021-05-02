@@ -5,7 +5,7 @@ git remote add name(genelde origin) <URL>
 ```
 borada origin farklı isimde olabilir ancak origin ismi artık bi standart olmuş. Belki birden fazla remote ekleme durumunda farklı isimlerde verilebilir.
 
-### Remote Listeleme
+## Remote Listeleme
 
 ```
 git remote
@@ -70,7 +70,7 @@ git checkout -b feature1 origin/master
 git checkout -b feature1 origin/feature1
 
 ```
-current rranch üzerinde iken track yapmak için
+current branch üzerinde iken track yapmak için
 
 ```
 git checkout --track remote_name/remote_branch_name
@@ -117,6 +117,28 @@ shallow clone (belirli bir history yi kopyalamak)
 git clone -depth=1 <repo>
 ```
 
+filtreleyerek clone lamak
+
+```
+git clone --filter=<filter-spec>
+```
+
+filter-spec için "Filter And Filter Spec" başlıklı dosyaya bakınız. 
+ 
+
+
+
+daha önceden .git klasörü altında .git/info/sparse-checkout/shiny-app/.filterspec dosyası oluşturulup .gitignore gibi syntax la filtreleme yapılabilir. daha sonra alttaki örnektegi gibi partial clone lamam yapılabilir.
+
+```
+git clone --sparse --filter=sparse:oid=master:shiny-app/.gitfilterspec <url>
+```
+
+- https://github.blog/2020-01-13-highlights-from-git-2-25/
+- https://docs.gitlab.com/ee/topics/git/partial_clone.html#remove-partial-clone-filtering
+
+
+
 belirli bir bracnh i clone lamak
 
 ```
@@ -131,6 +153,52 @@ git clone --bare https://github.com/example
 bir de --mirror opsiyonu var. --bare den farklı olarak bütün refs detaylarını da kopyalar.
 
 - https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone
+
+
+### Remote'a branch göndermek
+
+
+
+
+### biden fazla remote la çalışmak
+
+push yapmak
+
+```
+Edit files, add and commit. Then push with the -u (short for --set-upstream) option:
+
+git push -u origin <branch>
+
+# örnek
+
+git push --set-upstream origin master
+# veya
+
+git push -u origin master
+
+```
+
+bütün remote lara push yapmak için
+
+```
+git push --all -u
+# veya
+
+git push --set-upstream origin --all
+
+```
+
+default upstreame (reomote) Değiştirmek
+```
+git push --set-upstream second master
+```
+
+
+### remote checkout filter
+
+
+
+
 
 
 ### diğer komutlar

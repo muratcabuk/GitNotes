@@ -566,7 +566,20 @@ diğer bir yol remote dan branchi tamamen silip  yeni branch oluşturuop local �
 - https://ubuntu.com/blog/tricks-for-keeping-a-tidy-git-commit-history
 - https://about.gitlab.com/blog/2018/06/07/keeping-git-commit-history-clean/
 - https://spin.atomicobject.com/2017/04/23/maintain-clean-git-history/
+- https://about.gitlab.com/blog/2018/06/07/keeping-git-commit-history-clean/
   
+
+# Bütün commitleri değiştirmek
+
+WARNING
+
+git filter-branch has a plethora of pitfalls that can produce non-obvious manglings of the intended history rewrite (and can leave you with little time to investigate such problems since it has such abysmal performance). These safety and performance issues cannot be backward compatibly fixed and as such, its use is not recommended. Please use an alternative history filtering tool such as git filter-repo. If you still need to use git filter-branch, please carefully read SAFETY (and PERFORMANCE) to learn about the land mines of filter-branch, and then vigilantly avoid as many of the hazards listed there as reasonably possible.
+
+- https://git-scm.com/docs/git-filter-branch#_examples
+
+- https://git-scm.com/docs/git-filter-branch
+
+
 
 # Ekstralar
 
