@@ -1,10 +1,21 @@
 ### Index
 
-- 
-
-
-
-### Tanımlar
+- [How Git Works](HowGitWorks.md)
+- [Git Tutorial](gitTutorial.md)
+- [Branching and Solving Conflicts](BranchingAndSolvingConflicts.md)
+- [Remote](Remote.md)
+- [Commit Part Of File](CommitPartOfFile.md)
+- [Checkout Rm Revert Reset Clean.md](CheckoutRmRevertResetClean.md)
+- [FastFoward vs CherryPick vs Rebase vs Squash.md](FastFowardVsCherryPickVsRebaseVsSquash.md)
+- [Stashing](Stashing.md)
+- [Fixing History and Interactive Rebase](FixingHistoryAndInteractiveRebase.md)
+- [Git Flow and Best Practices](GitFlowAndBestPractices.md)
+- [Filter and FilterSpec](FilterAndFilterSpec.md)
+- [sparse-checkout](sparse-checkout.md)
+- [Submodules](Submodules.md)
+- [Useful Script](UsefulScript.md)
+- [Yapılması Gereneknler](YapilmasiGerekenler.md)
+  ### Tanımlar
 
 - upstream : hedef, target
 - diverged : ayrılan, ayrılmış

@@ -1,0 +1,2 @@
+- sparse-checkout ile remote uygulamla yapılmalı
+- branch-filter uygulaması yapılmalı
